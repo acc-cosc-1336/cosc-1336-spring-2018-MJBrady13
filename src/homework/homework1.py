@@ -1,13 +1,5 @@
 #This program converts the seconds past midnight into hours, minutes and seconds
 
-def main():    
-  total_seconds = int(input('Enter number of seconds: '))    
-  final_hours = get_hours_since_midnight(total_seconds)    
-  final_minutes = get_minutes(total_seconds)    
-  final_seconds = get_seconds(total_seconds)    
-  print ('The formatted time is: ', final_hours, ':', final_minutes,           
-         ':', final_seconds)
-  
 #Finds the number of hours
 def get_hours_since_midnight(total_seconds):
   hours = total_seconds // 3600
@@ -25,4 +17,9 @@ def get_seconds(total_seconds):
   seconds = seconds_remaining % 60
   return seconds
 
-main()
+total_seconds = int(input('Enter number of seconds: '))    
+final_hours = get_hours_since_midnight(total_seconds)    
+final_minutes = get_minutes(total_seconds)    
+final_seconds = get_seconds(total_seconds)    
+print ('The formatted time is: ', final_hours, ':', final_minutes,           
+         ':', final_seconds)

@@ -1,26 +1,27 @@
-def get_hours_since_midnight(seconds):
-    '''
-    Type the code to calculate total hours given n(number) of seconds
-    For example, given 3800 seconds the total hours is 1
-    '''
-    return
+#This program converts the seconds past midnight into hours, minutes and seconds
+def main():    
+    total_seconds = int(input('Enter number of seconds: '))    
+    final_hours = get_hours_since_midnight(total_seconds)    
+    final_minutes = get_minutes(total_seconds)    
+    final_seconds = get_seconds(total_seconds)    
+    print ('The formatted time is: ', final_hours, ':', final_minutes,           
+           ':', final_seconds)
+    
+#Finds the number of hours
+def get_hours_since_midnight(total_seconds):    
+    hours = total_seconds // 3600    
+    return hours
 
-'''
-IF YOU ARE OK WITH A GRADE OF 70 FOR THIS ASSIGNMENT STOP HERE.
-'''
+#Finds the number of minutes
+def get_minutes(total_seconds):     
+    seconds_remaining = total_seconds % 3600   
+    minutes = seconds_remaining // 60    
+    return minutes
 
-def get_minutes(seconds):
-    '''
-    Type the code to calculate total minutes less whole hour given n(number) of seconds
-    For example, given 3800 seconds the total minutes is 3
-    '''
+#Finds the number of seconds
+def get_seconds(total_seconds):     
+    seconds_remaining = total_seconds % 3600    
+    seconds = seconds_remaining % 60    
+    return seconds
 
-    return
-
-def get_seconds(seconds):
-    '''
-    Type the code to calculate total minutes less whole hour given n(number) of seconds
-    For example, given 3800 seconds the total minutes is 20
-    '''
-
-    return
+main()

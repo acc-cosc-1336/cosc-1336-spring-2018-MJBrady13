@@ -26,7 +26,6 @@ def get_credit_points(letter_grade):
     credit_points = 0.0
     if letter_grade == 'A':
         credit_points = 4.0
-        print('letter grade in function', letter_grade)
     elif letter_grade == 'a':
         credit_points = 4.0
     elif letter_grade == 'B':
@@ -44,8 +43,6 @@ def get_credit_points(letter_grade):
     else:
         credit_points = 0.0
 
-    print('letter grade in function', letter_grade)
-    print('credit points in function', credit_points)
     return credit_points
 
 def get_grade_points(credit_hours, credit_points):

@@ -1,8 +1,8 @@
 #write import statements for homework 6 functions
-from homework6 import get_point_mutations
-from homework6 import get_dna_complement
-from homework6 import transcribe_dna_into_rna
-from homework6 import get_gc_content
+from src.homework.homework6 import get_point_mutations
+from src.homework.homework6 import get_dna_complement
+from src.homework.homework6 import transcribe_dna_into_rna
+from src.homework.homework6 import get_gc_content
 
 def menu_options():
     print()

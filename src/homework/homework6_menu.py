@@ -52,7 +52,15 @@ def handle_option_1():
     keep_going = 'y'
     while keep_going == 'y':
         dna_string1 = input('Enter DNA string 1 (length 10, A,C,G,T only!): ')
+        
+        while len(dna_string_1) != 10:
+            dna_string1 = input('Enter DNA string 1 (length 10, A,C,G,T only!): ')
+        
         dna_string2 = input('Enter DNA string 2 (length 10, A,C,G,T only!): ')
+        
+        while len(dna_string_2) != 10:
+            dna_string2 = input('Enter DNA string 2 (length 10, A,C,G,T only!): ')
+        
         print(get_point_mutations(dna_string1, dna_string2))
         keep_going = input('Would you like to keep going?(y) ')
 

@@ -130,6 +130,11 @@ def get_list_min_max_file():
     old_max = 0
     for line in file:
         list1 = line.split()
+        i = 0
+        while i < len(list1):
+            if list1[i].isdigit():
+                list1[i] = int(list1[i])
+            i += 1
         
         min_max_list = get_list_min_max(list1)
         

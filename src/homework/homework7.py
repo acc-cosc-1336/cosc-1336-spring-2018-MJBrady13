@@ -52,6 +52,7 @@ def get_p_distance_matrix(dna_list):
 
     return return_list
 
+'''
 dna = [
  ['T','T','T','C','C','A','T','T','T','A'],
  ['G','A','T','T','C','A','T','T','T','C'],
@@ -60,4 +61,4 @@ dna = [
 ]
 
 print(get_p_distance_matrix(dna))
-
+'''

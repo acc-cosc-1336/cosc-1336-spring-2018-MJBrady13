@@ -10,12 +10,10 @@ If the widget exists it will update the quantity of the widgets.
     :return:
 '''
 def add_inventory(widgets, widget_name, quantity):
-    widget_dic = {}
-    widget_dic = widgets
-            
-    widget_dic[widget_name] = quantity
-    
-    return widget_dic
+    if widget_name in widgets:
+        widgets[widget_name] += quantity
+    else:
+        widgets[widget_name] = quantity
 
 '''
 Write a function named remove_inventory_widget with a widget_name parameter.

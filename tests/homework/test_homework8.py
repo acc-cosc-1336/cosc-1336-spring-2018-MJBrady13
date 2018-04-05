@@ -36,6 +36,6 @@ class Test_Assign8(unittest.TestCase):
     #in same test, check that return value is 'Record deleted'
     def test_widget0_remove_record(self):
         self.assertEqual('Record deleted', remove_inventory_widget(self.widgets, 'Widget0'))
-        print(len(self.widgets))
+        self.assertEqual(2, len(self.widgets))
 
 

@@ -21,7 +21,7 @@ class Die:
         Use the Python random object to generate a random value from 1 to 6
         '''
         
-        return (random.randint(1, 6))
+        return (random.randint(1, self.sides))
 
         
 

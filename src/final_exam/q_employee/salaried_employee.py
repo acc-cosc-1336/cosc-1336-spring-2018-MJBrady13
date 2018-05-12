@@ -3,9 +3,10 @@ from employee import Employee
 class SalariedEmployee(Employee):
 
     def __init__(self, yearly_rate, employee_id, name):
+        Employee.__init__(self, employee_id, name)
 
         self.yearly_rate = yearly_rate
 
-    def calculate(yearly_rate):
+    def calculate(self):
 
-        return (yearly_rate / 26)
+        return (self.yearly_rate / 26)
